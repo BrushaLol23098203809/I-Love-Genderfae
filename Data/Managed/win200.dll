@@ -1,0 +1,7 @@
+#include <windows.h>
+#include <iostream>
+
+// The extern "C" and dllexport modifiers allow external programs to access this function
+extern "C" __declspec(dllexport) void HelloWorld() {
+    std::cout << "Hello from the I love GenderFae!" << std::endl;
+}

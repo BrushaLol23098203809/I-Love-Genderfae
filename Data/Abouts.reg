@@ -1,0 +1,5 @@
+Windows Registry Editor Version 1.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"legalnoticecaption"="Security Notice"
+"legalnoticetext"="Property of My Company. Unauthorized access is strictly prohibited."

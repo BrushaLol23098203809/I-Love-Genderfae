@@ -1,4 +1,4 @@
-## I heart GenderFae
+## I love GenderFae
 Welcome to the iLoveGenderfae Pride repository! This project is a clone of the iLoveGenderfae website, built using Tailwind CSS. It is a fully responsive website, meaning it adapts seamlessly to various screen sizes and devices.
 Select Language: English | Japanese | Chinese | VietNam | Spainsh
 

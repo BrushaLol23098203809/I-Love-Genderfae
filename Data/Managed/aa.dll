@@ -1,0 +1,13 @@
+#pragma once
+
+// Macros to easily handle exporting functions
+#ifdef MYCUSTOMLIBRARY_EXPORTS
+#define ILOVEGENDERFAE __declspec(dllexport)
+#else
+#define IHEARTGENDERFAE __declspec(dllimport)
+#endif
+
+extern "C" {
+    // Declaring a simple addition function to be exported
+    LOVEI int AddNumbers(int a, int b);
+}

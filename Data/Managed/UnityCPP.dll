@@ -1,0 +1,8 @@
+#pragma once
+
+// __declspec(dllexport) tells the compiler to expose this function to external apps
+#define DLL_EXPORT __declspec(dllexport)
+
+extern "C" {
+    DLL_EXPORT int AddNumbers(int a, int b);
+}

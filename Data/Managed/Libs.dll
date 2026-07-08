@@ -1,0 +1,27 @@
+#include <iostream>
+#include <windows.h>
+
+// The extern "C" block prevents the C++ compiler from changing the function names.
+// __declspec(dllexport) tells the compiler to expose this function to external apps.
+extern "C" {
+    __declspec(dllexport) void Genderfaes() {
+        std::cout << "I LUV GENDERFAE" << std::endl;
+    }
+
+    __declspec(dllexport) int AddNumbers(int a, int b) {
+        return a + b;
+    }
+}
+
+// Optional: Main entry point for a DLL, called when loaded or unloaded by a process.
+BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved) {
+    switch (ul_reason_for_call) {
+        case DLL_PROCESS_ATTACH:
+            // Code to run when the DLL is loaded
+            break;
+        case DLL_PROCESS_DETACH:
+            // Code to run when the DLL is unloaded
+            break;
+    }
+    return TRUE;
+}
